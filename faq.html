@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faq</title>
+    <!-- google font link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- Flowbite JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.js"></script>
+    <link rel="icon" href="./imgs/img/download .png" />
+
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body>
+    <!-- herader start -->
+    <header
+      class="shadow-[0px_0px_8px_0px_rgba(51,51,51,0.2)] bg-white z-50 w-full fixed top-0"
+    >
+      <div
+        class="container1 py-2.5 max-[630px]:py-0 flex items-center justify-between"
+      >
+        <label
+          class="border cursor-pointer p-[3px] w-fit rounded-md border-light-gray"
+          for="check"
+        >
+          <img class="w-6 h-6" src="./imgs/svg/menu-bar.svg" alt="menu-bar"
+        /></label>
+        <input type="checkbox" class="hidden" id="check" />
+        <ul class="menu-bar flex items-center gap-10">
+          <label
+            class="hidden max-[1080px]:block absolute top-5 right-5"
+            for="check"
+            ><i class="fa-solid text-lg fa-xmark"></i
+          ></label>
+          <li>
+            <a class="text-[14px] font-medium text-black" href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./product.html"
+              >Product</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./cart.html"
+              >Cart</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./like.html"
+              >Like</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./about.html"
+              >About Us</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./faq.html"
+              >Faq</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a
+              class="text-[14px] font-medium text-black"
+              href="./blog_detail.html"
+              >Blog</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./admin.html"
+              >Admin panel</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+        </ul>
+        <img
+          class="hidden max-[630px]:block"
+          src="./imgs/img/logo.png"
+          alt="logo"
+        />
+
+        <div class="flex items-center gap-[5px] max-[350px]:hidden">
+          <img
+            class="cursor-pointer"
+            src="./imgs/svg/tel-icon.svg"
+            alt="tel-icon"
+          />
+          <a href="tel:+123 4567890">+123 ( 456 ) ( 7890 )</a>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <section
+      class="mt-[45px] max-[630px]:mt-[73px] z-20 fixed w-full bg-[#fdfafa] shadow-[0px_0px_8px_0px_rgba(51,51,51,0.2)]"
+    >
+      <div class="container1 py-5 flex items-center justify-between">
+        <div class="flex items-center max-[630px]:hidden">
+          <a href="./index.html"
+            ><img class="" src="./imgs/img/logo.png" alt="logo"
+          /></a>
+          <div>
+            <h2 class="text-2xl font-bold">Foodzy</h2>
+            <p class="text-[#221f1f] text-[11px] font-semibold">
+              A Treasure of Tastes
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="border rounded-md border-mint-green flex items-center justify-between w-[500px] max-[800px]:w-[60%] max-[630px]:w-full"
+        >
+          <input
+            class="pl-4 text-[12px] outline-none border-none w-[50%] max-[375px]:w-full"
+            type="text"
+            placeholder="Search For items..."
+          />
+          <div
+            class="flex items-center gap-3 border-l p-2 border-mint-green max-[375px]:hidden"
+          >
+            <p class="text-[13px] font-normal text-black">All Categories</p>
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </div>
+          <button class="p-[11.5px] rounded-[0px_5px_5px_0px] bg-[#f53e32]">
+            <img src="./imgs/svg/seach.svg" alt="seach" />
+          </button>
+        </div>
+        <div class="flex items-center gap-7 max-[960px]:hidden">
+          <div class="flex items-center gap-2 max-[1100px]:hidden">
+            <img class="w-[15px]" src="./imgs/svg/account.svg" alt="account" />
+            <p class="text-[15px] font-medium text-black">Account</p>
+          </div>
+          <div class="flex items-center relative gap-2">
+            <a href="./like.html">
+              <img class="w-[15px]" src="./imgs/svg/like.svg" alt="like" />
+              <p
+                class="counter_like absolute bg-[red] w-5 h-5 flex items-center justify-center text-white text-[12px] top-[-10px] right-[75px] rounded-full"
+              >
+                0
+              </p>
+            </a>
+            <p class="text-[15px] font-medium text-black">Wishlist</p>
+          </div>
+          <div class="flex items-center gap-2 relative">
+            <a href="./cart.html">
+              <img class="w-[15px]" src="./imgs/svg/cart.svg" alt="cart" />
+              <p
+                class="counter absolute bg-[red] w-5 h-5 flex items-center justify-center text-white text-[12px] top-[-10px] right-[50px] rounded-full"
+              >
+                0
+              </p>
+            </a>
+            <a href="./cart.html">
+              <p class="text-[15px] font-medium text-black">Cart</p></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#f53e32] pt-[160px] max-[630px]:pt-[155px]">
+      <div class="container1 py-6 flex items-center justify-between">
+        <a class="text-white text-[19px] font-bold" href="./faq.html">Faq</a>
+        <div class="flex items-center gap-2">
+          <a class="text-white font-medium text-[14px]" href="./index.html"
+            >Home</a
+          >
+          <span class="text-white">-</span>
+          <a class="text-white font-medium text-[14px]" href="./faq.html"
+            >Faq</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="my-24">
+      <div class="container1 flex gap-6 max-[1100px]:flex-col">
+        <img
+          src="./imgs/img/about-img-1.png"
+          alt="About image"
+          class="max-[1200px]:w-full"
+        />
+
+        <div class="w-full">
+          <div id="accordion-collapse" data-accordion="collapse">
+            <!-- 1 -->
+            <h2 id="accordion-heading-1">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 border rounded-t-lg focus:ring-2 focus:ring-gray-200 hover:bg-gray-100"
+                data-accordion-target="#accordion-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-body-1"
+              >
+                <span>What Facilities Does Your Hotel Have?</span>
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 shrink-0"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-body-1"
+              class=""
+              aria-labelledby="accordion-heading-1"
+            >
+              <div class="p-4 border border-t-0 border-gray-200 rounded-b-lg">
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                  voluptate doloribus eos sunt labore ea enim voluptatem.
+                </p>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <h2 id="accordion-heading-2" class="mt-2.5">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 border rounded-lg focus:ring-2 focus:ring-gray-200 hover:bg-gray-100"
+                data-accordion-target="#accordion-body-2"
+                aria-expanded="false"
+                aria-controls="accordion-body-2"
+              >
+                <span>How Do I Book A Room For My Vacation?</span>
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-body-2"
+              class="hidden"
+              aria-labelledby="accordion-heading-2"
+            >
+              <div class="p-4 border rounded-md border-gray-200">
+                <p class="text-gray-600">
+                  You can book a room via our online platform or contact our
+                  support team.
+                </p>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <h2 id="accordion-heading-3" class="mt-2.5">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 border rounded-lg focus:ring-2 focus:ring-gray-200 hover:bg-gray-100"
+                data-accordion-target="#accordion-body-3"
+                aria-expanded="false"
+                aria-controls="accordion-body-3"
+              >
+                <span>How we are best among others?</span>
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-body-3"
+              class="hidden"
+              aria-labelledby="accordion-heading-3"
+            >
+              <div class="p-4 border rounded-md border-gray-200">
+                <p class="text-gray-600">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ipsam, deserunt.
+                </p>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <h2 id="accordion-heading-4" class="mt-2.5">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 border rounded-lg focus:ring-2 focus:ring-gray-200 hover:bg-gray-100"
+                data-accordion-target="#accordion-body-4"
+                aria-expanded="false"
+                aria-controls="accordion-body-4"
+              >
+                <span>Is There Any Fitness Center In Your Hotel?</span>
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-body-4"
+              class="hidden"
+              aria-labelledby="accordion-heading-4"
+            >
+              <div class="p-4 border rounded-md border-gray-200">
+                <p class="text-gray-600">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ipsam, deserunt. Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <h2 id="accordion-heading-5" class="mt-2.5">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 border rounded-lg focus:ring-2 focus:ring-gray-200 hover:bg-gray-100"
+                data-accordion-target="#accordion-body-5"
+                aria-expanded="false"
+                aria-controls="accordion-body-5"
+              >
+                <span>What Type Of Room Service Do You Offer?</span>
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-body-5"
+              class="hidden"
+              aria-labelledby="accordion-heading-5"
+            >
+              <div class="p-4 border rounded-md border-gray-200">
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis, eveniet.
+                </p>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <h2 id="accordion-heading-6" class="mt-2.5">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 border rounded-lg focus:ring-2 focus:ring-gray-200 hover:bg-gray-100"
+                data-accordion-target="#accordion-body-6"
+                aria-expanded="false"
+                aria-controls="accordion-body-6"
+              >
+                <span>How Do I Book A Room For My Vacation?</span>
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-body-6"
+              class="hidden"
+              aria-labelledby="accordion-heading-6"
+            >
+              <div class="p-4 border rounded-md border-gray-200">
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsam, deserunt.
+                </p>
+              </div>
+            </div>
+
+            <h2 id="accordion-heading-7" class="mt-2.5">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 border rounded-lg focus:ring-2 focus:ring-gray-200 hover:bg-gray-100"
+                data-accordion-target="#accordion-body-7"
+                aria-expanded="false"
+                aria-controls="accordion-body-7"
+              >
+                <span>What Facilities Does Your Hotel Have?</span>
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-body-7"
+              class="hidden"
+              aria-labelledby="accordion-heading-7"
+            >
+              <div class="p-4 border rounded-md border-gray-200">
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsam, deserunt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#f7f7f8] border border-light-gray">
+      <div class="container1 pt-24">
+        <div
+          class="grid pb-24 grid-cols-4 gap-6 max-[1100px]:grid-cols-2 max-[490px]:grid-cols-1"
+        >
+          <!-- 1 -->
+          <div
+            class="flex flex-col max-[490px]:items-center max-[490px]:justify-center"
+          >
+            <div class="flex items-center gap-[2px]">
+              <img src="./imgs/img/shef.png" alt="sheff" />
+              <div class="flex flex-col gap-[1px] font-bold">
+                <h2>Foodzy</h2>
+                <p class="text-[#818181] text-[10px] font-semibold">
+                  A Treasure of Tastes
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-stone-gray text-[14px] max-w-[394px] pt-2 max-[490px]:text-center max-[490px]:max-w-full"
+            >
+              FoodTrove is the biggest market of grocery products. Get your
+              daily needs from our store.
+            </p>
+            <div class="mt-8 flex flex-col gap-5 max-[490px]:items-center">
+              <div class="flex items-start gap-2">
+                <img src="./imgs/svg/lactation.svg" alt="lactation" />
+                <a
+                  class="text-[#777] text-[14px] max-w-[350px] max-[490px]:text-center"
+                  href="#"
+                  >51 Green St.Huntington ohaio beach ontario, NY 11746 KY 4783,
+                  USA.</a
+                >
+              </div>
+              <div class="flex items-start gap-2">
+                <img src="./imgs/svg/email.svg" alt="lactation" />
+                <a
+                  class="text-[#777] text-[14px] max-w-[350px]"
+                  href="maillo:example@email.com"
+                  >example@email.com</a
+                >
+              </div>
+              <div class="flex items-start gap-2">
+                <img src="./imgs/svg/telefon.svg" alt="lactation" />
+                <a
+                  class="text-[#777] text-[14px] max-w-[350px]"
+                  href="tel:+91 123 4567890"
+                  >+91 123 4567890</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div
+            class="flex flex-col max-[490px]:items-center max-[490px]:justify-center"
+          >
+            <h2 class="text-black text-lg font-bold">Company</h2>
+            <div class="flex flex-col gap-4 pt-4 max-[490px]:text-center">
+              <a class="text-[#777] text-[14px]" href="#">About Us</a>
+              <a class="text-[#777] text-[14px]" href="#"
+                >Delivery Information</a
+              >
+              <a class="text-[#777] text-[14px]" href="#">Privacy Policy</a>
+              <a class="text-[#777] text-[14px]" href="#">Terms & Conditions</a>
+              <a class="text-[#777] text-[14px]" href="#">contact Us</a>
+              <a class="text-[#777] text-[14px]" href="#">Support Center</a>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div
+            class="flex flex-col max-[490px]:items-center max-[490px]:justify-center"
+          >
+            <h2 class="text-black text-lg font-bold">Category</h2>
+            <div class="flex flex-col gap-4 pt-4 max-[490px]:text-center">
+              <a class="text-[#777] text-[14px]" href="#">Dairy & Bakery</a>
+              <a class="text-[#777] text-[14px]" href="#">Fruits & Vegetable</a>
+              <a class="text-[#777] text-[14px]" href="#">Snack & Spice</a>
+              <a class="text-[#777] text-[14px]" href="#">Juice & Drinks</a>
+              <a class="text-[#777] text-[14px]" href="#">Chicken & Meat</a>
+              <a class="text-[#777] text-[14px]" href="#">Fast Food</a>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div>
+            <h2
+              class="text-black text-lg font-bold pb-4 max-[490px]:text-center"
+            >
+              Subscribe Our Newsletter
+            </h2>
+            <div class="flex flex-col gap-6">
+              <div
+                class="border border-[#e9e9e9] rounded-md bg-white p-3 flex items-center justify-between"
+              >
+                <input
+                  class="text-stone-gray outline-none"
+                  type="text"
+                  placeholder="Search here..."
+                />
+                <img src="./imgs/svg/telegram.svg" alt="telegram" />
+              </div>
+              <div class="flex items-center gap-1 max-[490px]:justify-center">
+                <button
+                  class="border border-[#e1dfdf] bg-white hover:bg-[#f5f4f4] rounded-md p-[9px_8px]"
+                >
+                  <img src="./imgs/svg/facbook-icon.svg" alt="facbook-icon" />
+                </button>
+                <button
+                  class="border border-[#e1dfdf] bg-white hover:bg-[#f5f4f4] rounded-md p-[9px_8px]"
+                >
+                  <img src="./imgs/svg/facbook.svg" alt="facbook" />
+                </button>
+                <button
+                  class="border border-[#e1dfdf] bg-white hover:bg-[#f5f4f4] rounded-md p-[9px_8px]"
+                >
+                  <img src="./imgs/svg/shar.svg" alt="facbook" />
+                </button>
+                <button
+                  class="border border-[#e1dfdf] bg-white hover:bg-[#f5f4f4] rounded-md p-[9px_8px]"
+                >
+                  <img src="./imgs/svg/instagram.svg" alt="facbook" />
+                </button>
+              </div>
+              <div class="flex items-center gap-3 max-[490px]:justify-center">
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="./imgs/img/footer-1.png"
+                  alt="footer-1"
+                />
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="./imgs/img/footer-2.png"
+                  alt="footer-2"
+                />
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="./imgs/img/footer-3.png"
+                  alt="footer-3"
+                />
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="./imgs/img/footer-4.png"
+                  alt="footer-4"
+                />
+                <img
+                  class="w-[40px] h-[40px] max-[600px]:hidden max-[490px]:block"
+                  src="./imgs/img/footer-5.png"
+                  alt="footer-5"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-5 text-center border-t border-light-gray">
+          <p>© 2025 foodzy, All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

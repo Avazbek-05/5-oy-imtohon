@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <!-- google font link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body>
+    <!-- herader start -->
+    <header
+    class="shadow-[0px_0px_8px_0px_rgba(51,51,51,0.2)] bg-white z-50 w-full fixed top-0"
+  >
+    <div
+      class="container1 py-2.5 max-[630px]:py-0 flex items-center justify-between"
+    >
+
+      <label
+        class="border cursor-pointer p-[3px] w-fit rounded-md border-light-gray"
+        for="check"
+      >
+        <img class="w-6 h-6" src="./imgs/svg/menu-bar.svg" alt="menu-bar"
+      /></label>
+      <input type="checkbox" class="hidden" id="check" />
+      <ul class="menu-bar flex items-center gap-10">
+        <label class="hidden max-[1080px]:block absolute top-5 right-5 "  for="check"><i class="fa-solid text-lg fa-xmark"></i></label>
+        <li>
+          <a class="text-[14px] font-medium text-black" href="./index.html">Home</a>
+        </li>
+        <li class="flex items-center gap-[5px]">
+          <a class="text-[14px] font-medium text-black" href="./product.html"
+            >Product</a
+          >
+          <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+        </li>
+        <li class="flex items-center gap-[5px]">
+          <a class="text-[14px] font-medium text-black" href="./cart.html">Cart</a>
+          <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+        </li>
+        <li class="flex items-center gap-[5px]">
+          <a class="text-[14px] font-medium text-black" href="./like.html">Like</a>
+          <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+        </li>
+        <li class="flex items-center gap-[5px]">
+          <a class="text-[14px] font-medium text-black" href="./about.html">About Us</a>
+          <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+        </li>
+        <li class="flex items-center gap-[5px]">
+          <a class="text-[14px] font-medium text-black" href="./faq.html">Faq</a>
+          <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+        </li>
+        <li class="flex items-center gap-[5px]">
+          <a class="text-[14px] font-medium text-black" href="./blog_detail.html">Blog</a>
+          <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+        </li>
+        <li class="flex items-center gap-[5px]">
+          <a class="text-[14px] font-medium text-black" href="#">Admin panel</a>
+          <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+        </li>
+      </ul>
+      <img
+        class="hidden max-[630px]:block"
+        src="./imgs/img/logo.png"
+        alt="logo"
+      />
+
+      <div class="flex items-center gap-[5px] max-[350px]:hidden">
+        <img
+          class="cursor-pointer"
+          src="./imgs/svg/tel-icon.svg"
+          alt="tel-icon"
+        />
+        <a href="tel:+123 4567890">+123 ( 456 ) ( 7890 )</a>
+      </div>
+    </div>
+  </header>
+    <!-- header end -->
+
+    <section
+      class="mt-[45px] max-[630px]:mt-[73px] z-20 fixed w-full bg-[#fdfafa] shadow-[0px_0px_8px_0px_rgba(51,51,51,0.2)]"
+    >
+      <div class="container1 py-3 flex items-center justify-between">
+        <div class="flex items-center max-[630px]:hidden">
+          <a href="./index.html"
+            ><img class="" src="./imgs/img/logo.png" alt="logo"
+          /></a>
+          <div>
+            <h2 class="text-2xl font-bold">Foodzy</h2>
+            <p class="text-[#221f1f] text-[11px] font-semibold">
+              A Treasure of Tastes
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="border rounded-md border-mint-green flex items-center justify-between w-[500px] max-[800px]:w-[60%] max-[630px]:w-full"
+        >
+          <input
+            class="pl-4 text-[12px] outline-none w-[50%] max-[375px]:w-full"
+            type="text"
+            placeholder="Search For items..."
+          />
+          <div
+            class="flex items-center gap-3 border-l p-2 border-mint-green max-[375px]:hidden"
+          >
+            <p class="text-[13px] font-normal text-black">All Categories</p>
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </div>
+          <button class="p-[11.5px] rounded-[0px_5px_5px_0px] bg-[#f53e32]">
+            <img src="./imgs/svg/seach.svg" alt="seach" />
+          </button>
+        </div>
+        <div class="flex items-center gap-7 max-[960px]:hidden">
+          <div class="flex items-center gap-2 max-[1100px]:hidden">
+            <img class="w-[15px]" src="./imgs/svg/account.svg" alt="account" />
+            <p class="text-[15px] font-medium text-black">Account</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <img class="w-[15px]" src="./imgs/svg/like.svg" alt="like" />
+            <p class="text-[15px] font-medium text-black">Wishlist</p>
+          </div>
+          <div class="flex items-center gap-2 relative">
+            <a href="./cart.html">
+              <img class="w-[15px]" src="./imgs/svg/cart.svg" alt="cart" />
+            </a>
+            <a href="./cart.html">
+              <p class="text-[15px] font-medium text-black">Cart</p></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#f53e32] pt-[170px] max-[630px]:pt-[155px]">
+      <div class="container1 py-6 flex items-center justify-between">
+        <a class="text-white text-[19px] font-bold" href="./product.html"
+          >Product</a
+        >
+        <div class="flex items-center gap-2">
+          <a class="text-white font-medium text-[14px]" href="./index.html"
+            >Home</a
+          >
+          <span class="text-white">/</span>
+          <a class="text-white font-medium text-[14px]" href="./product.html"
+            >Product</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-20">
+      <div class="container1 flex items-start gap-3 max-[1200px]:flex-col">
+        <div
+          class="bg-[#f7f7f8] flex flex-col rounded-md gap-[25px] border border-light-gray w-[306px] p-6 max-[1200px]:w-full"
+        >
+          <div class="flex flex-col gap-7">
+            <h2
+              class="text-[#2b2b2d] text-[16px] font-medium border-b border-light-gray pb-3"
+            >
+              product Category
+            </h2>
+
+            <div class="flex flex-col gap-[15px]">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2.5">
+                  <p
+                    class="border w-[18px] h-[18px] rounded-md border-[#ddd]"
+                  ></p>
+                  <p class="text-[#7a7a7a] text-[14px]">Juice & Drinks</p>
+                </div>
+                <p class="text-[#7a7a7a] text-[12px]">[20]</p>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2.5">
+                  <p
+                    class="border w-[18px] h-[18px] rounded-md border-[#ddd]"
+                  ></p>
+                  <p class="text-[#7a7a7a] text-[14px]">Dairy & Milk</p>
+                </div>
+                <p class="text-[#7a7a7a] text-[12px]">[54]</p>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2.5">
+                  <p
+                    class="border w-[18px] h-[18px] rounded-md border-[#ddd]"
+                  ></p>
+                  <p class="text-[#7a7a7a] text-[14px]">Snack & Spice</p>
+                </div>
+                <p class="text-[#7a7a7a] text-[12px]">[64]</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2
+              class="text-[#2b2b2d] text-[16px] font-medium border-b border-light-gray pb-3"
+            >
+              Filter By Price
+            </h2>
+            <img
+              class="p-[25px_11px] w-full"
+              src="./imgs/img/slider-range.png"
+              alt="slider-range"
+            />
+            <h2 class="text-[15px] font-bold text-black pb-[21px]">
+              Price :<span class="text-[#7a7a7a]">$20 - $250</span>
+            </h2>
+            <button
+              class="text-[14px] font-bold bg-[#f53e32] p-[11px_23px] text-white rounded-md"
+            >
+              Filter
+            </button>
+          </div>
+          <div class="flex flex-col gap-7">
+            <h2
+              class="text-[#2b2b2d] text-[16px] font-medium border-b border-light-gray pb-3"
+            >
+              product Category
+            </h2>
+
+            <div class="flex flex-col gap-[15px]">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2.5">
+                  <p
+                    class="border w-[18px] h-[18px] rounded-md border-[#ddd]"
+                  ></p>
+                  <p class="text-[#7a7a7a] text-[14px]">Blue</p>
+                </div>
+                <p class="w-[18px] h-[18px] rounded-md bg-[#6c9eff]"></p>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2.5">
+                  <p
+                    class="border w-[18px] h-[18px] rounded-md border-[#ddd]"
+                  ></p>
+                  <p class="text-[#7a7a7a] text-[14px]">Yellow</p>
+                </div>
+                <p class="w-[18px] h-[18px] rounded-md bg-[#dede44]"></p>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2.5">
+                  <p
+                    class="border w-[18px] h-[18px] rounded-md border-[#ddd]"
+                  ></p>
+                  <p class="text-[#7a7a7a] text-[14px]">Red</p>
+                </div>
+                <p class="w-[18px] h-[18px] rounded-md bg-[red]"></p>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2.5">
+                  <p
+                    class="border w-[18px] h-[18px] rounded-md border-[#ddd]"
+                  ></p>
+                  <p class="text-[#7a7a7a] text-[14px]">Green</p>
+                </div>
+                <p class="w-[18px] h-[18px] rounded-md bg-[#64b496]"></p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-7">
+            <h2
+              class="text-[#2b2b2d] text-[16px] font-medium border-b border-light-gray pb-3"
+            >
+              product Category
+            </h2>
+            <div class="flex flex-wrap gap-2.5">
+              <button
+                class="border border-light-gray text-[#7a7a7a] text-[14px] p-[6px_16px] rounded-md"
+              >
+                Vegetables
+              </button>
+              <button
+                class="border border-light-gray text-[#7a7a7a] text-[14px] p-[6px_15px] rounded-md"
+              >
+                juice
+              </button>
+              <button
+                class="border border-light-gray text-[#7a7a7a] text-[14px] p-[6px_15px] rounded-md"
+              >
+                Food
+              </button>
+              <button
+                class="border border-light-gray text-[#7a7a7a] text-[14px] p-[6px_15px] rounded-md"
+              >
+                Dry Fruits
+              </button>
+              <button
+                class="border border-light-gray text-[#7a7a7a] text-[14px] p-[6px_15px] rounded-md"
+              >
+                Vegetables
+              </button>
+              <button
+                class="border border-light-gray text-[#7a7a7a] text-[14px] p-[6px_15px] rounded-md"
+              >
+                juice
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="w-full flex flex-col">
+          <div class="flex float-start gap-3 max-[1064px]:flex-col">
+            <div class="flex flex-col gap-4">
+              <img
+                class="border h-[471px] border-light-gray rounded-md max-[361px]:h-[300px]"
+                src="./imgs/img/product-img-1.png"
+                alt="product-img-1"
+              />
+              <div class="flex items-center justify-between flex-wrap gap-3">
+                <img
+                  class="border rounded-md border-light-gray"
+                  src="./imgs/img/1.png"
+                  alt="1"
+                />
+                <img
+                  class="border rounded-md border-light-gray"
+                  src="./imgs/img/2.png"
+                  alt="2"
+                />
+                <img
+                  class="border rounded-md border-light-gray"
+                  src="./imgs/img/3.png"
+                  alt="3"
+                />
+                <img
+                  class="border rounded-md border-light-gray"
+                  src="./imgs/img/4.png"
+                  alt="4"
+                />
+                <img
+                  class="border rounded-md border-light-gray"
+                  src="./imgs/img/5.png"
+                  alt="5"
+                />
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="px-3">
+              <div class="border-b flex flex-col gap-4 pb-6 border-light-gray">
+                <h2
+                  class="text-[#2b2b2d] text-[22px] max-[500px]:text-center max-[350px]:text-[18px]"
+                >
+                  Seeds Of Change Oraganic Quinoa, Brown
+                </h2>
+                <p
+                  class="text-stone-gray text-[14px] max-w-[446px] max-[500px]:text-center"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+                  iure minus error doloribus saepe natus?
+                </p>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <div class="flex items-center gap-5px">
+                  <i
+                    class="fa-solid text-fire-orange text-[17px] fa-star-half-stroke"
+                  ></i
+                  ><i
+                    class="fa-solid text-fire-orange text-[17px] fa-star-half-stroke"
+                  ></i
+                  ><i
+                    class="fa-solid text-fire-orange text-[17px] fa-star-half-stroke"
+                  ></i
+                  ><i
+                    class="fa-solid text-fire-orange text-[17px] fa-star-half-stroke"
+                  ></i
+                  ><i
+                    class="fa-solid text-fire-orange text-[17px] fa-star-half-stroke"
+                  ></i>
+                </div>
+                <p class="text-[15px] text-stone-gray pt-5 pb-6">
+                  ( 75 Review )
+                </p>
+              </div>
+
+              <div class="flex flex-col gap-[18px]">
+                <div class="flex items-center gap-2.5">
+                  <div class="flex items-center w-24 justify-between">
+                    <h3
+                      class="text-[#2b2b2d] max-[300px]:text-[14px] text-[16px] font-semibold"
+                    >
+                      Brand
+                    </h3>
+                    <span class="text-[#2b2b2d]">:</span>
+                  </div>
+                  <h3 class="text-[#777] text-[14px] max-[324px]:text-[12px]">
+                    ESTA BETTERU CO
+                  </h3>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <div class="flex items-center w-24 justify-between">
+                    <h3
+                      class="text-[#2b2b2d] max-[300px]:text-[14px] text-[16px] font-semibold"
+                    >
+                      Flavour
+                    </h3>
+                    <span class="text-[#2b2b2d]">:</span>
+                  </div>
+                  <h3 class="text-[#777] text-[14px] max-[324px]:text-[12px]">
+                    Super Saver Pack
+                  </h3>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <div class="flex items-center w-24 justify-between">
+                    <h3
+                      class="text-[#2b2b2d] max-[300px]:text-[14px] text-[16px] font-semibold"
+                    >
+                      Diet Type
+                    </h3>
+                    <span class="text-[#2b2b2d] max-[324px]:text-[12px]"
+                      >:</span
+                    >
+                  </div>
+                  <h3 class="text-[#777] text-[14px] max-[324px]:text-[12px]">
+                    Vegetarian
+                  </h3>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <div class="flex items-center w-24 justify-between">
+                    <h3
+                      class="text-[#2b2b2d] max-[300px]:text-[14px] text-[16px] font-semibold"
+                    >
+                      Weight
+                    </h3>
+                    <span class="text-[#2b2b2d]">:</span>
+                  </div>
+                  <h3 class="text-[#777] text-[14px] max-[324px]:text-[12px]">
+                    200 Grams
+                  </h3>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <div class="flex items-center w-24 justify-between">
+                    <h3
+                      class="text-[#2b2b2d] max-[300px]:text-[14px] text-[16px] font-semibold"
+                    >
+                      Speciality
+                    </h3>
+                    <span class="text-[#2b2b2d]">:</span>
+                  </div>
+                  <h3 class="text-[#777] text-[14px] max-[324px]:text-[12px]">
+                    Gluten Free, Sugar Free
+                  </h3>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <div class="flex items-center w-24 justify-between">
+                    <h3
+                      class="text-[#2b2b2d] text-[16px] max-[300px]:text-[14px] font-semibold"
+                    >
+                      Info
+                    </h3>
+                    <span class="text-[#2b2b2d]">:</span>
+                  </div>
+                  <h3 class="text-[#777] text-[14px] max-[324px]:text-[12px]">
+                    Egg Free, Allergen-Free
+                  </h3>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <div class="flex items-center w-24 justify-between">
+                    <h3
+                      class="text-[#2b2b2d] text-[16px] font-semibold max-[300px]:text-[14px]"
+                    >
+                      Items
+                    </h3>
+                    <span class="text-[#2b2b2d]">:</span>
+                  </div>
+
+                  <h3 class="text-[#777] text-[14px] max-[324px]:text-[12px]">
+                    1
+                  </h3>
+                </div>
+              </div>
+
+              <div class="flex items-end gap-[5px] p-[15px_0]">
+                <h2 class="text-[#f53e32] text-2xl font-semibold">$120.25</h2>
+                <p class="text-stone-gray text-[16px] line-through">$123.25</p>
+              </div>
+              <div class="flex items-center gap-3 max-[430px]:flex-col">
+                <h2 class="text-[#2b2b2d] text-[16px] font-medium">
+                  Size/Weight :
+                </h2>
+                <div
+                  class="flex items-center gap-1 max-[430px]:justify-between"
+                >
+                  <button
+                    class="bg-[#f53e32] p-[3px_11px] text-[12px] text-white border border-light-gray rounded-md"
+                  >
+                    50kg
+                  </button>
+                  <button
+                    class="hover:bg-[#f53e32] text-[#777] p-[3px_11px] transition-all duration-300 text-[12px] hover:text-white border border-light-gray rounded-md"
+                  >
+                    80kg
+                  </button>
+                  <button
+                    class="hover:bg-[#f53e32] text-[#777] p-[3px_11px] transition-all duration-300 text-[12px] hover:text-white border border-light-gray rounded-md"
+                  >
+                    120kg
+                  </button>
+                  <button
+                    class="hover:bg-[#f53e32] text-[#777] p-[3px_11px] transition-all duration-300 text-[12px] hover:text-white border border-light-gray rounded-md"
+                  >
+                    200kg
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex items-center max-[430px]:justify-center gap-4 mt-4 max-[375px]:flex-col"
+              >
+                <div class="flex items-center gap-1">
+                  <button
+                    class="border border-light-gray text-[16px] w-10 h-10 rounded-md"
+                  >
+                    1
+                  </button>
+                  <div class="flex flex-col items-center gap-[2px]">
+                    <button
+                      class="border border-light-gray text-[16px] rounded-md w-[18px] flex items-center justify-center h-[18px]"
+                    >
+                      +
+                    </button>
+                    <button
+                      class="border border-light-gray text-[16px] rounded-md w-[18px] flex items-center justify-center h-[18px]"
+                    >
+                      -
+                    </button>
+                  </div>
+                </div>
+                <button
+                  class="text-[14px] text-white font-bold bg-[#f53e32] rounded-md p-[11px_22px] max-[375px]:w-full"
+                >
+                  Add to cart
+                </button>
+                <div class="flex items-center gap-2.5">
+                  <button class="border border-light-gray rounded-md w-10 h-10">
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </button>
+                  <button class="border border-light-gray rounded-md w-10 h-10">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10 border border-light-gray p-6 rounded-md">
+            <div class="flex flex-col gap-8 max-[330px]:justify-center">
+              <div
+                class="border-b border-[#dee2e6] flex items-center gap-8 pb-6"
+              >
+                <h3
+                  class="text-[#f53e32] text-[17px] font-semibold max-[330px]:text-center"
+                >
+                  Description
+                </h3>
+                <h3
+                  class="text-[#2b2b2d] text-[17px] font-semibold max-[413px]:hidden"
+                >
+                  Information
+                </h3>
+                <h3
+                  class="text-[#2b2b2d] text-[17px] font-semibold max-[413px]:hidden"
+                >
+                  Review
+                </h3>
+              </div>
+              <p class="text-stone-gray text-[14px] max-[330px]:text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                in vero sapiente odio, error dolore vero temporibus consequatur,
+                nobis veniam odit dignissimos consectetur quae in perferendis
+                doloribusdebitis corporis, eaque dicta, repellat amet, illum
+                adipisci vel perferendis dolor! Quis vel consequuntur repellat
+                distinctio rem. Corrupti ratione alias odio, error dolore
+                temporibus consequatur, nobis veniam odit laborum dignissimos
+                consectetur quae vero in perferendis provident quis.
+              </p>
+            </div>
+            <div class="flex flex-col gap-8 pt-6">
+              <div class="border-b border-[#dee2e6] pb-6">
+                <h3
+                  class="text-[#2b2b2d] text-[17px] font-semibold max-[330px]:text-center"
+                >
+                  Packaging & Delivery
+                </h3>
+              </div>
+              <p class="text-stone-gray text-[14px] max-[330px]:text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                in vero perferendis dolor! Quis vel consequuntur repellat
+                distinctio rem. Corrupti ratione alias odio, error dolore
+                temporibus consequatur, nobis veniam odit laborum dignissimos
+                consectetur quae vero in perferendis provident quis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="mb-20 mt-40">
+      <div class="container1">
+        <div class="flex flex-col items-center text-center gap-4">
+          <h2
+            class="text-[#2b2b2d] text-[32px] font-bold max-[350px]:text-[25px]"
+          >
+            Popular Products
+          </h2>
+          <p class="stroke-stone-gray text-[14px] max-w-[595px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et viverra maecenas accumsan
+            lacus vel facilisis.
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-4 mt-10 gap-6 max-[1010px]:grid-cols-2 max-[500px]:grid-cols-1"
+        >
+          <div class="border border-light-gray rounded-md p-[13px]">
+            <div class="flex items-center justify-center">
+              <img
+                class="border rounded-md border-light-gray"
+                src="./imgs/img/product-1.png"
+                alt="product-1"
+              />
+            </div>
+            <div class="flex flex-col gap-4 pt-6 items-center justify-center">
+              <p>Snacks</p>
+              <div class="flex items-center gap-1">
+                <div class="flex items-center text-fire-orange">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-[#999] text-[14px]">(4.5)</p>
+              </div>
+              <h2
+                class="text-center text-[#2b2b2d] text-[15px] font-medium max-w-[246px]"
+              >
+                Best snakes with hazel nut mix pack 200gm
+              </h2>
+              <div class="flex items-center gap-[5px]">
+                <h3 class="text-[#f53e32] text-[16px] font-bold">$120.25</h3>
+                <p class="line-through text-stone-gray text-[13px]">$123.25</p>
+              </div>
+            </div>
+          </div>
+          <div class="border border-light-gray rounded-md p-[13px]">
+            <div class="flex items-center justify-center">
+              <img
+                class="border rounded-md border-light-gray"
+                src="./imgs/img/product-2.png"
+                alt="product-2"
+              />
+            </div>
+            <div class="flex flex-col gap-4 pt-6 items-center justify-center">
+              <p>Snacks</p>
+              <div class="flex items-center gap-1">
+                <div class="flex items-center text-fire-orange">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-[#999] text-[14px]">(4.5)</p>
+              </div>
+              <h2
+                class="text-center text-[#2b2b2d] text-[15px] font-medium max-w-[246px]"
+              >
+                Best snakes with hazel nut mix pack 200gm
+              </h2>
+              <div class="flex items-center gap-[5px]">
+                <h3 class="text-[#f53e32] text-[16px] font-bold">$120.25</h3>
+                <p class="line-through text-stone-gray text-[13px]">$123.25</p>
+              </div>
+            </div>
+          </div>
+          <div class="border border-light-gray rounded-md p-[13px]">
+            <div class="flex items-center justify-center">
+              <img
+                class="border rounded-md border-light-gray"
+                src="./imgs/img/product-3.png"
+                alt="product-2"
+              />
+            </div>
+            <div class="flex flex-col gap-4 pt-6 items-center justify-center">
+              <p>Snacks</p>
+              <div class="flex items-center gap-1">
+                <div class="flex items-center text-fire-orange">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-[#999] text-[14px]">(4.5)</p>
+              </div>
+              <h2
+                class="text-center text-[#2b2b2d] text-[15px] font-medium max-w-[246px]"
+              >
+                Best snakes with hazel nut mix pack 200gm
+              </h2>
+              <div class="flex items-center gap-[5px]">
+                <h3 class="text-[#f53e32] text-[16px] font-bold">$120.25</h3>
+                <p class="line-through text-stone-gray text-[13px]">$123.25</p>
+              </div>
+            </div>
+          </div>
+          <div class="border border-light-gray rounded-md p-[13px]">
+            <div class="flex items-center justify-center">
+              <img
+                class="border rounded-md border-light-gray"
+                src="./imgs/img/product-4.png"
+                alt="product-1"
+              />
+            </div>
+            <div class="flex flex-col gap-4 pt-6 items-center justify-center">
+              <p>Snacks</p>
+              <div class="flex items-center gap-1">
+                <div class="flex items-center text-fire-orange">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-[#999] text-[14px]">(4.5)</p>
+              </div>
+              <h2
+                class="text-center text-[#2b2b2d] text-[15px] font-medium max-w-[246px]"
+              >
+                Best snakes with hazel nut mix pack 200gm
+              </h2>
+              <div class="flex items-center gap-[5px]">
+                <h3 class="text-[#f53e32] text-[16px] font-bold">$120.25</h3>
+                <p class="line-through text-stone-gray text-[13px]">$123.25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#f7f7f8] border border-light-gray">
+      <div class="container1 pt-24">
+        <div
+          class="grid pb-24 grid-cols-4 gap-6 max-[1100px]:grid-cols-2 max-[490px]:grid-cols-1"
+        >
+          <!-- 1 -->
+          <div
+            class="flex flex-col max-[490px]:items-center max-[490px]:justify-center"
+          >
+            <div class="flex items-center gap-[2px]">
+              <img src="./imgs/img/shef.png" alt="sheff" />
+              <div class="flex flex-col gap-[1px] font-bold">
+                <h2>Foodzy</h2>
+                <p class="text-[#818181] text-[10px] font-semibold">
+                  A Treasure of Tastes
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-stone-gray text-[14px] max-w-[394px] pt-2 max-[490px]:text-center max-[490px]:max-w-full"
+            >
+              FoodTrove is the biggest market of grocery products. Get your
+              daily needs from our store.
+            </p>
+            <div class="mt-8 flex flex-col gap-5 max-[490px]:items-center">
+              <div class="flex items-start gap-2">
+                <img src="./imgs/svg/lactation.svg" alt="lactation" />
+                <a
+                  class="text-[#777] text-[14px] max-w-[350px] max-[490px]:text-center"
+                  href="#"
+                  >51 Green St.Huntington ohaio beach ontario, NY 11746 KY 4783,
+                  USA.</a
+                >
+              </div>
+              <div class="flex items-start gap-2">
+                <img src="./imgs/svg/email.svg" alt="lactation" />
+                <a
+                  class="text-[#777] text-[14px] max-w-[350px]"
+                  href="maillo:example@email.com"
+                  >example@email.com</a
+                >
+              </div>
+              <div class="flex items-start gap-2">
+                <img src="./imgs/svg/telefon.svg" alt="lactation" />
+                <a
+                  class="text-[#777] text-[14px] max-w-[350px]"
+                  href="tel:+91 123 4567890"
+                  >+91 123 4567890</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div
+            class="flex flex-col max-[490px]:items-center max-[490px]:justify-center"
+          >
+            <h2 class="text-black text-lg font-bold">Company</h2>
+            <div class="flex flex-col gap-4 pt-4 max-[490px]:text-center">
+              <a class="text-[#777] text-[14px]" href="#">About Us</a>
+              <a class="text-[#777] text-[14px]" href="#"
+                >Delivery Information</a
+              >
+              <a class="text-[#777] text-[14px]" href="#">Privacy Policy</a>
+              <a class="text-[#777] text-[14px]" href="#">Terms & Conditions</a>
+              <a class="text-[#777] text-[14px]" href="#">contact Us</a>
+              <a class="text-[#777] text-[14px]" href="#">Support Center</a>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div
+            class="flex flex-col max-[490px]:items-center max-[490px]:justify-center"
+          >
+            <h2 class="text-black text-lg font-bold">Category</h2>
+            <div class="flex flex-col gap-4 pt-4 max-[490px]:text-center">
+              <a class="text-[#777] text-[14px]" href="#">Dairy & Bakery</a>
+              <a class="text-[#777] text-[14px]" href="#">Fruits & Vegetable</a>
+              <a class="text-[#777] text-[14px]" href="#">Snack & Spice</a>
+              <a class="text-[#777] text-[14px]" href="#">Juice & Drinks</a>
+              <a class="text-[#777] text-[14px]" href="#">Chicken & Meat</a>
+              <a class="text-[#777] text-[14px]" href="#">Fast Food</a>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div>
+            <h2
+              class="text-black text-lg font-bold pb-4 max-[490px]:text-center"
+            >
+              Subscribe Our Newsletter
+            </h2>
+            <div class="flex flex-col gap-6">
+              <div
+                class="border border-[#e9e9e9] rounded-md bg-white p-3 flex items-center justify-between"
+              >
+                <input
+                  class="text-stone-gray outline-none"
+                  type="text"
+                  placeholder="Search here..."
+                />
+                <img src="./imgs/svg/telegram.svg" alt="telegram" />
+              </div>
+              <div class="flex items-center gap-1 max-[490px]:justify-center">
+                <button
+                  class="border border-[#e1dfdf] bg-white hover:bg-[#f5f4f4] rounded-md p-[9px_8px]"
+                >
+                  <img src="./imgs/svg/facbook-icon.svg" alt="facbook-icon" />
+                </button>
+                <button
+                  class="border border-[#e1dfdf] bg-white hover:bg-[#f5f4f4] rounded-md p-[9px_8px]"
+                >
+                  <img src="./imgs/svg/facbook.svg" alt="facbook" />
+                </button>
+                <button
+                  class="border border-[#e1dfdf] bg-white hover:bg-[#f5f4f4] rounded-md p-[9px_8px]"
+                >
+                  <img src="./imgs/svg/shar.svg" alt="facbook" />
+                </button>
+                <button
+                  class="border border-[#e1dfdf] bg-white hover:bg-[#f5f4f4] rounded-md p-[9px_8px]"
+                >
+                  <img src="./imgs/svg/instagram.svg" alt="facbook" />
+                </button>
+              </div>
+              <div class="flex items-center gap-3 max-[490px]:justify-center">
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="./imgs/img/footer-1.png"
+                  alt="footer-1"
+                />
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="./imgs/img/footer-2.png"
+                  alt="footer-2"
+                />
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="./imgs/img/footer-3.png"
+                  alt="footer-3"
+                />
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="./imgs/img/footer-4.png"
+                  alt="footer-4"
+                />
+                <img
+                  class="w-[40px] h-[40px] max-[600px]:hidden max-[490px]:block"
+                  src="./imgs/img/footer-5.png"
+                  alt="footer-5"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-5 text-center border-t border-light-gray">
+          <p>© 2025 foodzy, All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodzy-1</title>
+    <!-- google font link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="icon" href="./imgs/img/download .png" />
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body>
+    <!-- herader start -->
+    <header
+      class="shadow-[0px_0px_8px_0px_rgba(51,51,51,0.2)] bg-white z-50 w-full fixed top-0"
+    >
+      <div
+        class="container1 py-2.5 max-[630px]:py-0 flex items-center justify-between"
+      >
+        <label
+          class="border cursor-pointer p-[3px] w-fit rounded-md border-light-gray"
+          for="check"
+        >
+          <img class="w-6 h-6" src="./imgs/svg/menu-bar.svg" alt="menu-bar"
+        /></label>
+        <input type="checkbox" class="hidden" id="check" />
+        <ul class="menu-bar flex items-center gap-10">
+          <label
+            class="hidden max-[1080px]:block absolute top-5 right-5"
+            for="check"
+            ><i class="fa-solid text-lg fa-xmark"></i
+          ></label>
+          <li>
+            <a class="text-[14px] font-medium text-black" href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./product.html"
+              >Product</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./cart.html"
+              >Cart</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./like.html"
+              >Like</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./about.html"
+              >About Us</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./faq.html"
+              >Faq</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a
+              class="text-[14px] font-medium text-black"
+              href="./blog_detail.html"
+              >Blog</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./admin.html"
+              >Admin panel</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+        </ul>
+        <img
+          class="hidden max-[630px]:block"
+          src="./imgs/img/logo.png"
+          alt="logo"
+        />
+
+        <div class="flex items-center gap-[5px] max-[350px]:hidden">
+          <img
+            class="cursor-pointer"
+            src="./imgs/svg/tel-icon.svg"
+            alt="tel-icon"
+          />
+          <a href="tel:+123 4567890">+123 ( 456 ) ( 7890 )</a>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <section
+      class="mt-[45px] max-[630px]:mt-[73px] z-20 fixed w-full bg-[#fdfafa] shadow-[0px_0px_8px_0px_rgba(51,51,51,0.2)]"
+    >
+      <div class="container1 py-5 flex items-center justify-between">
+        <div class="flex items-center max-[630px]:hidden">
+          <a href="./index.html"
+            ><img class="" src="./imgs/img/logo.png" alt="logo"
+          /></a>
+          <div>
+            <h2 class="text-2xl font-bold">Foodzy</h2>
+            <p class="text-[#221f1f] text-[11px] font-semibold">
+              A Treasure of Tastes
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="border rounded-md border-mint-green flex items-center justify-between w-[500px] max-[800px]:w-[60%] max-[630px]:w-full"
+        >
+          <input
+            class="pl-4 text-[12px] outline-none w-[50%] max-[375px]:w-full"
+            type="text"
+            placeholder="Search For items..."
+          />
+          <div
+            class="flex items-center gap-3 border-l p-2 border-mint-green max-[375px]:hidden"
+          >
+            <p class="text-[13px] font-normal text-black">All Categories</p>
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </div>
+          <button class="p-[11.5px] rounded-[0px_5px_5px_0px] bg-[#f53e32]">
+            <img src="./imgs/svg/seach.svg" alt="seach" />
+          </button>
+        </div>
+        <div class="flex items-center gap-7 max-[960px]:hidden">
+          <div class="flex items-center gap-2 max-[1100px]:hidden">
+            <img class="w-[15px]" src="./imgs/svg/account.svg" alt="account" />
+            <p class="text-[15px] font-medium text-black">Account</p>
+          </div>
+          <div class="flex items-center relative gap-2">
+            <a href="./like.html">
+              <img class="w-[15px]" src="./imgs/svg/like.svg" alt="like" />
+              <p
+                class="counter_like absolute bg-[red] w-5 h-5 flex items-center justify-center text-white text-[12px] top-[-10px] right-[75px] rounded-full"
+              >
+                0
+              </p>
+            </a>
+            <p class="text-[15px] font-medium text-black">Wishlist</p>
+          </div>
+          <div class="flex items-center gap-2 relative">
+            <a href="./cart.html">
+              <img class="w-[15px]" src="./imgs/svg/cart.svg" alt="cart" />
+              <p
+                class="counter absolute bg-[red] w-5 h-5 flex items-center justify-center text-white text-[12px] top-[-10px] right-[50px] rounded-full"
+              >
+                0
+              </p>
+            </a>
+            <a href="./cart.html">
+              <p class="text-[15px] font-medium text-black">Cart</p></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- wrapper start-->
+    <section class="bg-[#f0f0f0]">
+      <div
+        class="container1 relative p-[300px_0px_110px_0px] max-[801px]:pt-[200px] flex justify-between items-start max-[800px]:flex-col-reverse max-[800px]:gap-10"
+      >
+        <img
+          class="absolute left-0 bottom-[553px] max-[801px]:hidden"
+          src="./imgs/img/icon-1.png"
+          alt="icon-1"
+        />
+        <img
+          class="absolute bottom-0 left-0 max-[801px]:hidden"
+          src="./imgs/img/icon-2.png"
+          alt="icon-2"
+        />
+        <img
+          class="absolute right-0 w-[500px] bottom-0 h-[400px] max-[1216px]:hidden"
+          src="./imgs/img/icon-3.png"
+          alt="icon-2"
+        />
+        <img
+          class="absolute bottom-[535px] left-[50%] max-[801px]:hidden"
+          src="./imgs/img/icon-4.png"
+          alt="icon-2"
+        />
+        <img
+          class="absolute bottom-10 left-[50%] max-[801px]:hidden"
+          src="./imgs/img/icon-5.png"
+          alt="icon-2"
+        />
+
+        <div
+          class="flex flex-col max-[800px]:items-center max-[800px]:m-auto max-[800px]:w-full max-[800px]:justify-center"
+        >
+          <h3
+            class="text-xl font-bold max-[800px]:text-center max-[800px]:m-auto"
+          >
+            <span class="underline text-[#f53e32]">100%</span> Organic
+            Vegetables
+          </h3>
+          <h1
+            class="text-[45px] font-bold max-w-[452px] p-[20px_0_25px_0] max-[800px]:text-center max-[600px]:text-[30px] max-[330px]:text-[26px]"
+          >
+            The best way to stuff your wallet.
+          </h1>
+          <p
+            class="font-normal text-[14px] max-w-[488px] max-[800px]:text-center"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+            reiciendis beatae consequuntur.
+          </p>
+          <div
+            class="bg-white flex items-center justify-between rounded-[50px] mt-11 max-[800px]:w-full max-[425px]:py-4"
+          >
+            <div class="flex items-center gap-4 pl-3">
+              <img src="./imgs/svg/telegram.svg" alt="telegram" />
+              <input
+                class="text-[16px] font-normal text-gray-500 outline-none w-full"
+                type="text"
+                placeholder="Your email address"
+              />
+            </div>
+            <button
+              class="bg-leafy-green p-[22px_40px] hover:bg-[#307e51b9] rounded-[50px] text-[16px] font-medium text-white max-[425px]:hidden"
+            >
+              Subscribe
+            </button>
+          </div>
+          <button
+            class="bg-leafy-green mt-6 p-[15px_30px] hover:bg-[green] rounded-[50px] w-full text-[16px] font-medium text-white hidden max-[425px]:block"
+          >
+            Subscribe
+          </button>
+        </div>
+
+        <!-- Ikkinchi qism -->
+        <div
+          class="flex items-center gap-4 max-[1200px]:grid max-[1200px]:grid-cols-3 max-[1000px]:grid-cols-2 max-[800px]:grid-cols-5 max-[400px]:w-full max-[650px]:grid-cols-3 max-[400px]:grid-cols-1"
+        >
+          <div
+            class="flex items-center p-3 gap-2.5 shadow-[5px_5px_15px_0px_rgba(0,0,0,0.05)] bg-white rounded-[30px] w-fit max-[400px]:w-full"
+          >
+            <img src="./imgs/svg/two.svg" alt="two" />
+            <h3
+              class="text-[17px] font-bold text-leafy-green hover:text-[#253d4e]"
+            >
+              Shopping
+            </h3>
+          </div>
+          <div
+            class="flex items-center p-3 gap-2.5 shadow-[5px_5px_15px_0px_rgba(0,0,0,0.05)] bg-white rounded-[30px] w-fit max-[400px]:w-full"
+          >
+            <img src="./imgs/svg/two.svg" alt="two" />
+            <h3
+              class="text-[17px] font-bold hover:text-leafy-green text-[#253d4e]"
+            >
+              Recips
+            </h3>
+          </div>
+          <div
+            class="flex items-center p-3 gap-2.5 shadow-[5px_5px_15px_0px_rgba(0,0,0,0.05)] bg-white rounded-[30px] w-fit max-[400px]:w-full"
+          >
+            <img src="./imgs/svg/two.svg" alt="two" />
+            <h3
+              class="text-[17px] font-bold text-leafy-green hover:text-[#253d4e]"
+            >
+              Kitchen
+            </h3>
+          </div>
+          <div
+            class="flex items-center p-3 gap-2.5 shadow-[5px_5px_15px_0px_rgba(0,0,0,0.05)] bg-white rounded-[30px] w-fit max-[400px]:w-full"
+          >
+            <img src="./imgs/svg/two.svg" alt="two" />
+            <h3
+              class="text-[17px] font-bold text-leafy-green hover:text-[#253d4e]"
+            >
+              News
+            </h3>
+          </div>
+          <div
+            class="flex items-center p-3 gap-2.5 shadow-[5px_5px_15px_0px_rgba(0,0,0,0.05)] bg-white rounded-[30px] w-fit max-[400px]:w-full"
+          >
+            <img src="./imgs/svg/two.svg" alt="two" />
+            <h3
+              class="text-[17px] font-bold text-leafy-green hover:text-[#253d4e]"
+            >
+              Food
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="m-[75px_0px_50px_0]">
+      <div
+        class="container1 grid grid-cols-3 gap-4 max-[1000px]:grid-cols-2 max-[650px]:grid-cols-1 max-[650px]:max-w-full"
+      >
+        <a href="./product.html">
+          <div
+            class="bg-[url('../imgs/img/banner-1.png')] bg-[-100px_center] rounded-xl bg-no-repeat bg-cover h-[300px] flex flex-col max gap-4 justify-center p-[9px_0px_0px_50px]"
+          >
+            <h2 class="text-xl font-bold max-w-[210px]">
+              Everyday Fresh & Clean with Our Products
+            </h2>
+            <button
+              class="bg-[#f53e32] w-fit p-[8px_13px] rounded text-[12px] text-white font-bold"
+            >
+              Shop Now
+            </button>
+          </div></a
+        >
+
+        <a href="./product.html">
+          <div
+            class="bg-[url('../imgs/img/banner-2.png')] bg-[-100px_center] rounded-xl bg-no-repeat bg-cover h-[300px]"
+          >
+            <div
+              class="flex flex-col gap-4 justify-center p-[79px_0px_0px_50px]"
+            >
+              <h2 class="text-xl font-bold max-w-[210px]">
+                Everyday Fresh & Clean with Our Products
+              </h2>
+              <button
+                class="bg-[#f53e32] w-fit p-[8px_13px] rounded text-[12px] text-white font-bold"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div></a
+        >
+        <a href="./product.html">
+          <div
+            class="bg-[url('../imgs/img/banner-3.png')] bg-[-100px_center] rounded-xl bg-no-repeat bg-cover h-[300px]"
+          >
+            <div
+              class="flex flex-col gap-4 justify-center p-[79px_0px_0px_50px]"
+            >
+              <h2 class="text-xl font-bold max-w-[210px]">
+                Everyday Fresh & Clean with Our Products
+              </h2>
+              <button
+                class="bg-[#f53e32] w-fit p-[8px_13px] rounded text-[12px] text-white font-bold"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div></a
+        >
+      </div>
+    </section>
+
+    <section>
+      <div class="container1">
+        <div
+          class="flex items-center justify-between max-[1050px]:flex-col max-[1050px]:gap-4"
+        >
+          <h2
+            class="text-charcoal-blue text-3xl font-bold max-[710px]:text-center max-[360px]:text-2xl"
+          >
+            Popular Products
+          </h2>
+          <div class="flex items-center gap-5 max-[710px]:hidden">
+            <p class="text-leafy-green text-[16px] font-semibold">All</p>
+            <p
+              class="hover:text-leafy-green text-charcoal-blue text-[16px] font-semibold"
+            >
+              Milks & Dairies
+            </p>
+            <p
+              class="hover:text-leafy-green text-charcoal-blue text-[16px] font-semibold"
+            >
+              Coffes & Teas
+            </p>
+            <p
+              class="hover:text-leafy-green text-charcoal-blue text-[16px] font-semibold"
+            >
+              Pet Foods
+            </p>
+            <p
+              class="hover:text-leafy-green text-charcoal-blue text-[16px] font-semibold"
+            >
+              Meats
+            </p>
+            <p
+              class="hover:text-leafy-green text-charcoal-blue text-[16px] font-semibold"
+            >
+              Vegetables
+            </p>
+            <p
+              class="hover:text-leafy-green text-charcoal-blue text-[16px] font-semibold"
+            >
+              Fruits
+            </p>
+          </div>
+        </div>
+        <div
+          class="cards my-11 grid grid-cols-5 gap-4 max-[1355px]:grid-cols-4 max-[1080px]:grid-cols-3 max-[820px]:grid-cols-2 max-[535px]:grid-cols-1"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Deals Of The Day -->
+    <section class="my-10">
+      <div class="container1">
+        <h2 class="text-[#253d4e] text-[32px] font-bold">Daily Best Sells</h2>
+        <div class="mt-10 flex items-start gap-3 h-full">
+          <div
+            class="bg-[url('../imgs/img/bast-1.png')] w-[378px] h-[520px] max-[800px]:hidden bg-no-repeat bg-cover bg-center rounded-md flex flex-col items-start p-[49px_10px_190px_50px] justify-between"
+          >
+            <h2 class="text-white text-[30px] font-bold max-w-[202px]">
+              Bring nature into your home
+            </h2>
+            <button
+              class="flex items-center p-[8px_13px] gap-1 rounded text-white bg-[#f53e32]"
+            >
+              <p>Shop Now</p>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <!-- 2 -->
+
+          <!-- 1 -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- 1 -->
+              <div class="swiper-slide">
+                <div
+                  class="border relative border-light-gray w-fit p-4 rounded-md max-[1000px]:w-full"
+                >
+                  <img
+                    class="flex items-center justify-center m-auto"
+                    src="./imgs/img/img1.png"
+                    alt="img1"
+                  />
+                  <i class="fa-regular absolute top-5 right-5 fa-heart"></i>
+                  <div>
+                    <p class="text-[#adadad] text-[12px]">Hodo Foods</p>
+                    <h2
+                      class="text-[#253d4e] text-[16px] font-bold py-2.5 max-[600px]:text-[14px] max-[600px]:font-medium"
+                    >
+                      All Natural Italian-Style Chicken Meatballs
+                    </h2>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid text-fire-orange fa-star"></i
+                      ><i class="fa-solid text-fire-orange fa-star"></i>
+                    </div>
+                    <div class="flex items-center gap-2 p-[22px_0px_19px_0]">
+                      <h3 class="text-[#3bb77e] text-lg font-bold">$238.85</h3>
+                      <p
+                        class="line-through text-[#adadad] text-[14px] font-bold"
+                      >
+                        $245.8
+                      </p>
+                    </div>
+                    <div class="flex flex-col gap-2.5 pb-5">
+                      <img src="./imgs/img/line.png" alt="line" />
+                      <p class="text-[#253d4e] text-[13px]">Sold: 90/120</p>
+                    </div>
+                    <button
+                      class="text-white text-[14px] font-bold bg-[#f53e32] rounded-md py-3 flex w-full items-center justify-center"
+                    >
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="swiper-slide">
+                <div
+                  class="border relative border-light-gray w-fit p-4 rounded-md max-[1000px]:w-full"
+                >
+                  <img
+                    class="flex items-center justify-center m-auto"
+                    src="./imgs/img/img3.png"
+                    alt="img3"
+                  />
+                  <i class="fa-regular absolute top-5 right-5 fa-heart"></i>
+                  <div>
+                    <p class="text-[#adadad] text-[12px]">Hodo Foods</p>
+                    <h2
+                      class="text-[#253d4e] text-[16px] font-bold py-2.5 max-[600px]:text-[14px] max-[600px]:font-medium"
+                    >
+                      Angie’s Boomchickapop Sweet and womnies
+                    </h2>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid text-fire-orange fa-star"></i
+                      ><i class="fa-solid text-fire-orange fa-star"></i>
+                    </div>
+                    <div class="flex items-center gap-2 p-[22px_0px_19px_0]">
+                      <h3 class="text-[#3bb77e] text-lg font-bold">$438.85</h3>
+                      <p
+                        class="line-through text-[#adadad] text-[14px] font-bold"
+                      >
+                        $545.8
+                      </p>
+                    </div>
+                    <div class="flex flex-col gap-2.5 pb-5">
+                      <img src="./imgs/img/line.png" alt="line" />
+                      <p class="text-[#253d4e] text-[13px]">Sold: 90/120</p>
+                    </div>
+                    <button
+                      class="text-white text-[14px] font-bold bg-[#f53e32] rounded-md py-3 flex w-full items-center justify-center"
+                    >
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="border relative border-light-gray w-fit p-4 rounded-md max-[1000px]:w-full"
+                >
+                  <img
+                    class="flex items-center justify-center m-auto"
+                    src="./imgs/img/product-2.png"
+                    alt="img2"
+                  />
+                  <i class="fa-regular absolute top-5 right-5 fa-heart"></i>
+                  <div>
+                    <p class="text-[#adadad] text-[12px]">Hodo Foods</p>
+                    <h2
+                      class="text-[#253d4e] text-[16px] font-bold py-2.5 max-[600px]:text-[14px] max-[600px]:font-medium"
+                    >
+                      Foster Farms Takeout Crispy Classic
+                    </h2>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid text-fire-orange fa-star"></i
+                      ><i class="fa-solid text-fire-orange fa-star"></i>
+                    </div>
+                    <div class="flex items-center gap-2 p-[22px_0px_19px_0]">
+                      <h3 class="text-[#3bb77e] text-lg font-bold">$23.85</h3>
+                      <p
+                        class="line-through text-[#adadad] text-[14px] font-bold"
+                      >
+                        $24.8
+                      </p>
+                    </div>
+                    <div class="flex flex-col gap-2.5 pb-5">
+                      <img src="./imgs/img/line.png" alt="line" />
+                      <p class="text-[#253d4e] text-[13px]">Sold: 90/120</p>
+                    </div>
+                    <button
+                      class="text-white text-[14px] font-bold bg-[#f53e32] rounded-md py-3 flex w-full items-center justify-center"
+                    >
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="swiper-slide">
+                <div
+                  class="border relative border-light-gray w-fit p-4 rounded-md max-[1000px]:w-full"
+                >
+                  <img
+                    class="flex items-center justify-center m-auto"
+                    src="./imgs/img/img3.png"
+                    alt="img3"
+                  />
+                  <i class="fa-regular absolute top-5 right-5 fa-heart"></i>
+                  <div>
+                    <p class="text-[#adadad] text-[12px]">Hodo Foods</p>
+                    <h2
+                      class="text-[#253d4e] text-[16px] font-bold py-2.5 max-[600px]:text-[14px] max-[600px]:font-medium"
+                    >
+                      Blue Diamond Almonds Lightly Salted
+                    </h2>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid text-fire-orange fa-star"></i
+                      ><i class="fa-solid text-fire-orange fa-star"></i>
+                    </div>
+                    <div class="flex items-center gap-2 p-[22px_0px_19px_0]">
+                      <h3 class="text-[#3bb77e] text-lg font-bold">$238.85</h3>
+                      <p
+                        class="line-through text-[#adadad] text-[14px] font-bold"
+                      >
+                        $245.8
+                      </p>
+                    </div>
+                    <div class="flex flex-col gap-2.5 pb-5">
+                      <img src="./imgs/img/line.png" alt="line" />
+                      <p class="text-[#253d4e] text-[13px]">Sold: 90/120</p>
+                    </div>
+                    <button
+                      class="text-white text-[14px] font-bold bg-[#f53e32] rounded-md py-3 flex w-full items-center justify-center"
+                    >
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5 -->
+              <div class="swiper-slide">
+                <div
+                  class="border relative border-light-gray w-fit p-4 rounded-md max-[1000px]:w-full"
+                >
+                  <img
+                    class="flex items-center justify-center m-auto"
+                    src="./imgs/img/img1.png"
+                    alt="img5"
+                  />
+                  <i class="fa-regular absolute top-5 right-5 fa-heart"></i>
+                  <div>
+                    <p class="text-[#adadad] text-[12px]">Hodo Foods</p>
+                    <h2
+                      class="text-[#253d4e] text-[16px] font-bold py-2.5 max-[600px]:text-[14px] max-[600px]:font-medium"
+                    >
+                      All Natural Italian-Style Chicken Meatballs
+                    </h2>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid text-fire-orange fa-star"></i
+                      ><i class="fa-solid text-fire-orange fa-star"></i>
+                    </div>
+                    <div class="flex items-center gap-2 p-[22px_0px_19px_0]">
+                      <h3 class="text-[#3bb77e] text-lg font-bold">$68.85</h3>
+                      <p
+                        class="line-through text-[#adadad] text-[14px] font-bold"
+                      >
+                        $75.8
+                      </p>
+                    </div>
+                    <div class="flex flex-col gap-2.5 pb-5">
+                      <img src="./imgs/img/line.png" alt="line" />
+                      <p class="text-[#253d4e] text-[13px]">Sold: 90/120</p>
+                    </div>
+                    <button
+                      class="text-white text-[14px] font-bold bg-[#f53e32] rounded-md py-3 flex w-full items-center justify-center"
+                    >
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deals Of The Day -->
+    <section class="my-7">
+      <div class="container1">
+        <h2
+          class="text-[#253d4e] text-[32px] font-bold max-[400px]:text-center max-[400px]:text-[25px]"
+        >
+          Deals Of The Day
+        </h2>
+        <div
+          class="grid grid-cols-4 gap-6 max-[1200px]:grid-cols-2 max-[600px]:grid-cols-1 mt-5 max-[600px]:gap-32"
+        >
+          <div
+            class="bg-[url('../imgs/img/day-1.png')] flex items-center justify-center relative rounded-2xl h-[335px] max-[900px]:h-[300px] bg-no-repeat bg-cover bg-center"
+          >
+            <div
+              class="shadow-[5px_5px_15px_0_rgba(0,0,0,0.05)] absolute bottom-[-105px] bg-white mx-4 p-3 rounded-lg"
+            >
+              <h2
+                class="text-[#253d4e] text-[16px] font-bold max-[1300px]:text-[14px] max-[1300px]:font-semibold"
+              >
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </h2>
+              <div class="flex items-center gap-2 py-2">
+                <i class="fa-solid text-fire-orange fa-star"></i>
+                <p class="text-[#b6b6b6] text-[14px]">(4.0)</p>
+              </div>
+              <p class="text-[#3bb77e] text-[14px]">
+                <span class="text-[#b6b6b6]">By </span>NestFood
+              </p>
+              <div class="flex items-center justify-between pt-6">
+                <div class="flex items-center gap-2.5">
+                  <h2 class="text-lg font-bold text-[#3bb77e]">$32.85</h2>
+                  <p class="line-through text-[#adadad] text-[14px] font-bold">
+                    $33.8
+                  </p>
+                </div>
+                <button
+                  class="flex text-white items-center gap-1 bg-[red] rounded p-[9px_15px_9px_15px]"
+                >
+                  <img
+                    src="./imgs/svg/korzinka.svg"
+                    alt="basket"
+                    class="z-10"
+                  />
+                  <p class="text-[14px] font-bold text-white z-10">Add</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+
+          <div
+            class="bg-[url('../imgs/img/day-2.png')] max-[900px]:h-[300px] flex items-center justify-center relative rounded-2xl h-[335px] bg-no-repeat bg-cover bg-center max-[1200px]:mb-20"
+          >
+            <div
+              class="shadow-[5px_5px_15px_0_rgba(0,0,0,0.05)] absolute bottom-[-105px] bg-white mx-4 p-3 rounded-lg"
+            >
+              <h2
+                class="text-[#253d4e] text-[16px] font-bold max-[1300px]:text-[14px] max-[1300px]:font-semibold"
+              >
+                Perdue Simply Smart Organics Gluten Free
+              </h2>
+              <div class="flex items-center gap-2 py-2">
+                <i class="fa-solid text-fire-orange fa-star"></i>
+                <p class="text-[#b6b6b6] text-[14px]">(4.0)</p>
+              </div>
+              <p class="text-[#3bb77e] text-[14px]">
+                <span class="text-[#b6b6b6]">By </span> Old El Pas
+              </p>
+              <div class="flex items-center justify-between pt-6">
+                <div class="flex items-center gap-2.5">
+                  <h2 class="text-lg font-bold text-[#3bb77e]">$32.85</h2>
+                  <p class="line-through text-[#adadad] text-[14px] font-bold">
+                    $33.8
+                  </p>
+                </div>
+                <button
+                  class="flex text-white items-center gap-1 bg-[red] rounded p-[9px_15px_9px_15px]"
+                >
+                  <img
+                    src="./imgs/svg/korzinka.svg"
+                    alt="basket"
+                    class="z-10"
+                  />
+                  <p class="text-[14px] font-bold text-white z-10">Add</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-[url('../imgs/img/day-3.png')] max-[900px]:h-[300px] flex items-center justify-center relative rounded-2xl h-[335px] bg-no-repeat bg-cover bg-center"
+          >
+            <div
+              class="shadow-[5px_5px_15px_0_rgba(0,0,0,0.05)] absolute bottom-[-105px] bg-white mx-4 p-3 rounded-lg"
+            >
+              <h2
+                class="text-[#253d4e] text-[16px] font-bold max-[1300px]:text-[14px] max-[1300px]:font-semibold"
+              >
+                Signature Wood-Fired Mushroom and Caramelized
+              </h2>
+              <div class="flex items-center gap-2 py-2">
+                <i class="fa-solid text-fire-orange fa-star"></i>
+                <p class="text-[#b6b6b6] text-[14px]">(4.0)</p>
+              </div>
+              <p class="text-[#3bb77e] text-[14px]">
+                <span class="text-[#b6b6b6]">By </span>Progresso
+              </p>
+              <div class="flex items-center justify-between pt-6">
+                <div class="flex items-center gap-2.5">
+                  <h2 class="text-lg font-bold text-[#3bb77e]">$32.85</h2>
+                  <p class="line-through text-[#adadad] text-[14px] font-bold">
+                    $33.8
+                  </p>
+                </div>
+                <button
+                  class="flex text-white items-center gap-1 bg-[red] rounded p-[9px_15px_9px_15px]"
+                >
+                  <img
+                    src="./imgs/svg/korzinka.svg"
+                    alt="basket"
+                    class="z-10"
+                  />
+                  <p class="text-[14px] font-bold text-white z-10">Add</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-[url('../imgs/img/day-4.png')] max-[900px]:h-[300px] flex items-center justify-center relative rounded-2xl h-[335px] bg-no-repeat bg-cover bg-center"
+          >
+            <div
+              class="shadow-[5px_5px_15px_0_rgba(0,0,0,0.05)] absolute bottom-[-105px] bg-white mx-4 p-3 rounded-lg"
+            >
+              <h2
+                class="text-[#253d4e] text-[16px] font-bold max-[1300px]:text-[14px] max-[1300px]:font-semibold"
+              >
+                Simply Lemonade with Raspberry Juice
+              </h2>
+              <div class="flex items-center gap-2 py-2">
+                <i class="fa-solid text-fire-orange fa-star"></i>
+                <p class="text-[#b6b6b6] text-[14px]">(4.0)</p>
+              </div>
+              <p class="text-[#3bb77e] text-[14px]">
+                <span class="text-[#b6b6b6]">By </span>Yoplait
+              </p>
+              <div class="flex items-center justify-between pt-6">
+                <div class="flex items-center gap-2.5">
+                  <h2 class="text-lg font-bold text-[#3bb77e]">$32.85</h2>
+                  <p class="line-through text-[#adadad] text-[14px] font-bold">
+                    $33.8
+                  </p>
+                </div>
+                <button
+                  class="flex text-white items-center gap-1 bg-[red] rounded p-[9px_15px_9px_15px]"
+                >
+                  <img
+                    src="./imgs/svg/korzinka.svg"
+                    alt="basket"
+                    class="z-10"
+                  />
+                  <p class="text-[14px] font-bold text-white z-10">Add</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- boxs start -->
+    <section class="boxs mt-40 pb-14">
+      <div
+        class="container1 grid grid-cols-4 gap-1 max-[1200px]:grid-cols-2 max-[575px]:grid-cols-1 max-[575px]:gap-4"
+      >
+        <!-- box1 -->
+        <div class="box flex flex-col gap-7">
+          <div class="border-b border-[#ececec]">
+            <h3 class="text-2xl font-bold pb-5 text-charcoal-blue">
+              Top Selling
+            </h3>
+            <p class="border-b-2 border-[#bce3c9] w-[100px]"></p>
+          </div>
+          <div class="flex flex-col gap-7">
+            <!-- 1 -->
+            <div class="flex items-center gap-2 max-[325px]:flex-col">
+              <a href="./product.html">
+                <img
+                  class="max-[325px]:w-full"
+                  src="./imgs/img/box-1.png"
+                  alt="box-1"
+                />
+              </a>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-[14px] font-medium text-charcoal-blue">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h3>
+                <div class="flex items-center gap-10">
+                  <i class="fa-solid text-fire-orange fa-star"></i>
+                  <p class="text-silver-gay text-[14px]">(4.0)</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-leafy-green font-bold text-lg">$32.85</p>
+                  <p class="line-through text-[14px] font-bold text-[#adadad]">
+                    $33.8
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="flex items-center gap-2 max-[325px]:flex-col">
+              <a href="./product.html">
+                <img
+                  class="max-[325px]:w-full"
+                  src="./imgs/img/box-5.png"
+                  alt="box-1"
+                />
+              </a>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-[14px] font-medium text-charcoal-blue">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h3>
+                <div class="flex items-center gap-10">
+                  <i class="fa-solid text-fire-orange fa-star"></i>
+                  <p class="text-silver-gay text-[14px]">(4.0)</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-leafy-green font-bold text-lg">$32.85</p>
+                  <p class="line-through text-[14px] font-bold text-[#adadad]">
+                    $33.8
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="flex items-center gap-2 max-[325px]:flex-col">
+              <a href="./product.html">
+                <img
+                  class="max-[325px]:w-full"
+                  src="./imgs/img/box-9.png"
+                  alt="box-1"
+                />
+              </a>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-[14px] font-medium text-charcoal-blue">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h3>
+                <div class="flex items-center gap-10">
+                  <i class="fa-solid text-fire-orange fa-star"></i>
+                  <p class="text-silver-gay text-[14px]">(4.0)</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-leafy-green font-bold text-lg">$32.85</p>
+                  <p class="line-through text-[14px] font-bold text-[#adadad]">
+                    $33.8
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- box2 -->
+        <div class="box flex flex-col gap-7">
+          <div class="border-b border-[#ececec]">
+            <h3 class="text-2xl font-bold pb-5 text-charcoal-blue">
+              Trending Products
+            </h3>
+            <p class="border-b-2 border-[#bce3c9] w-[100px]"></p>
+          </div>
+          <div class="flex flex-col gap-7">
+            <!-- 1 -->
+            <div class="flex items-center gap-2 max-[325px]:flex-col">
+              <a href="./product.html">
+                <img
+                  class="max-[325px]:w-full"
+                  src="./imgs/img/box-2.png"
+                  alt="box-1"
+                />
+              </a>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-[14px] font-medium text-charcoal-blue">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h3>
+                <div class="flex items-center gap-10">
+                  <i class="fa-solid text-fire-orange fa-star"></i>
+                  <p class="text-silver-gay text-[14px]">(4.0)</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-leafy-green font-bold text-lg">$32.85</p>
+                  <p class="line-through text-[14px] font-bold text-[#adadad]">
+                    $33.8
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="flex items-center gap-2 max-[325px]:flex-col">
+              <a href="./product.html">
+                <img
+                  class="max-[325px]:w-full"
+                  src="./imgs/img/box-6.png"
+                  alt="box-1"
+                />
+              </a>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-[14px] font-medium text-charcoal-blue">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h3>
+                <div class="flex items-center gap-10">
+                  <i class="fa-solid text-fire-orange fa-star"></i>
+                  <p class="text-silver-gay text-[14px]">(4.0)</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-leafy-green font-bold text-lg">$32.85</p>
+                  <p class="line-through text-[14px] font-bold text-[#adadad]">
+                    $33.8
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="flex items-center gap-2 max-[325px]:flex-col">
+              <a href="./product.html">
+                <img
+                  class="max-[325px]:w-full"
+                  src="./imgs/img/box-10.png"
+                  alt="box-1"
+                />
+              </a>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-[14px] font-medium text-charcoal-blue">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h3>
+                <div class="flex items-center gap-10">
+                  <i class="fa-solid text-fire-orange fa-star"></i>
+                  <p class="text-silver-gay text-[14px]">(4.0)</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-leafy-green font-bold text-lg">$32.85</p>
+                  <p class="line-through text-[14px] font-bold text-[#adadad]">
+                    $33.8
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- box3 -->
+        <div class="box flex flex-col gap-7">
+          <div class="border-b border-[#ececec]">
+            <h3 class="text-2xl font-bold pb-5 text-charcoal-blue">
+              Recently added
+            </h3>
+            <p class="border-b-2 border-[#bce3c9] w-[100px]"></p>
+          </div>
+          <div class="flex flex-col gap-7">
+            <!-- 1 -->
+            <div class="flex items-center gap-2 max-[325px]:flex-col">
+              <a href="./product.html">
+                <img
+                  class="max-[325px]:w-full"
+                  src="./imgs/img/box-3.png"
+                  alt="box-1"
+                />
+              </a>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-[14px] font-medium text-charcoal-blue">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h3>
+                <div class="flex items-center gap-10">
+                  <i class="fa-solid text-fire-orange fa-star"></i>
+                  <p class="text-silver-gay text-[14px]">(4.0)</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-leafy-green font-bold text-lg">$32.85</p>
+                  <p class="line-through text-[14px] font-bold text-[#adadad]">
+                    $33.8
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="flex items-center gap-2 max-[325px]:flex-col">
+              <a href="./product.html">
+                <img
+                  class="max-[325px]:w-full"
+                  src="./imgs/img/box-7.png"
+                  alt="box-1"
+                />
+              </a>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-[14px] font-medium text-charcoal-blue">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h3>
+                <div class="flex items-center gap-10">
+                  <i class="fa-solid text-fire-orange fa-star"></i>
+                  <p class="text-silver-gay text-[14px]">(4.0)</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-leafy-green font-bold text-lg">$32.85</p>
+                  <p class="line-through text-[14px] font-bold text-[#adadad]">
+                    $33.8
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="flex items-center gap-2 max-[325px]:flex-col">
+              <a href="./product.html">
+                <img
+                  class="max-[325px]:w-full"
+                  src="./imgs/img/box-11.png"
+                  alt="box-1"
+                />
+              </a>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-[14px] font-medium text-charcoal-blue">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h3>
+                <div class="flex items-center gap-10">
+                  <i class="fa-solid text-fire-orange fa-star"></i>
+                  <p class="text-silver-gay text-[14px]">(4.0)</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-leafy-green font-bold text-lg">$32.85</p>
+                  <p class="line-through text-[14px] font-bold text-[#adadad]">
+                    $33.8
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- box4 -->
+        <div class="box flex flex-col gap-7">
+          <div class="border-b border-[#ececec]">
+            <h3 class="text-2xl font-bold pb-5 text-charcoal-blue">
+              Top Rated
+            </h3>
+            <p class="border-b-2 border-[#bce3c9] w-[100px]"></p>
+          </div>
+          <div class="flex flex-col gap-7">
+            <!-- 1 -->
+            <div class="flex items-center gap-2 max-[325px]:flex-col">
+              <a href="./product.html">
+                <img
+                  class="max-[325px]:w-full"
+                  src="./imgs/img/box-4.png"
+                  alt="box-1"
+                />
+              </a>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-[14px] font-medium text-charcoal-blue">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h3>
+                <div class="flex items-center gap-10">
+                  <i class="fa-solid text-fire-orange fa-star"></i>
+                  <p class="text-silver-gay text-[14px]">(4.0)</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-leafy-green font-bold text-lg">$32.85</p>
+                  <p class="line-through text-[14px] font-bold text-[#adadad]">
+                    $33.8
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="flex items-center gap-2 max-[325px]:flex-col">
+              <a href="./product.html">
+                <img
+                  class="max-[325px]:w-full"
+                  src="./imgs/img/box-8.png"
+                  alt="box-1"
+                />
+              </a>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-[14px] font-medium text-charcoal-blue">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h3>
+                <div class="flex items-center gap-10">
+                  <i class="fa-solid text-fire-orange fa-star"></i>
+                  <p class="text-silver-gay text-[14px]">(4.0)</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-leafy-green font-bold text-lg">$32.85</p>
+                  <p class="line-through text-[14px] font-bold text-[#adadad]">
+                    $33.8
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="flex items-center gap-2 max-[325px]:flex-col">
+              <a href="./product.html">
+                <img
+                  class="max-[325px]:w-full"
+                  src="./imgs/img/box-12.png"
+                  alt="box-1"
+                />
+              </a>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-[14px] font-medium text-charcoal-blue">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h3>
+                <div class="flex items-center gap-10">
+                  <i class="fa-solid text-fire-orange fa-star"></i>
+                  <p class="text-silver-gay text-[14px]">(4.0)</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-leafy-green font-bold text-lg">$32.85</p>
+                  <p class="line-through text-[14px] font-bold text-[#adadad]">
+                    $33.8
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- boxs end-->
+
+    <section class="my-10">
+      <div
+        class="container1 bg-[url('../imgs/img/bg-img.png')] bg-no-repeat rounded-3xl bg-cover bg-center pt-20 px-5 max-[1155px]:py-6 flex items-start justify-between max-[1155px]:flex-col-reverse max-[1155px]:items-center max-[1155px]:gap-5 max-[1155px]:justify-center"
+      >
+        <div>
+          <h2
+            class="text-[30px] font-semibold text-charcoal-blue max-w-[429px] max-[1155px]:text-center max-[500px]:text-xl"
+          >
+            Stay home & get your daily needs from our shop
+          </h2>
+          <p class="text-[#7e7e7e] text-lg pt-5 max-[1155px]:text-center">
+            Start You'r Daily Shopping with
+            <span class="text-[#3bb77e]">Nest Mart</span>
+          </p>
+          <div
+            class="bg-white flex items-center justify-between rounded-[50px] mt-11 max-[800px]:w-full max-[460px]:py-4"
+          >
+            <div class="flex items-center gap-4 pl-3">
+              <img src="./imgs/svg/telegram.svg" alt="telegram" />
+              <input
+                class="text-[16px] font-normal text-gray-500 outline-none w-full"
+                type="text"
+                placeholder="Your email address"
+              />
+            </div>
+            <button
+              class="bg-leafy-green p-[22px_40px] hover:bg-[#307e51b9] rounded-[50px] text-[16px] font-medium text-white max-[460px]:hidden"
+            >
+              Subscribe
+            </button>
+          </div>
+          <button
+            class="bg-leafy-green mt-6 p-[15px_30px] hover:bg-[green] rounded-[50px] w-full text-[16px] font-medium text-white hidden max-[460px]:block"
+          >
+            Subscribe
+          </button>
+        </div>
+
+        <img src="./imgs/img/bg-img-1.png" alt="" />
+      </div>
+    </section>
+
+    <!-- item start -->
+    <section class="mb-20">
+      <div
+        class="container1 grid grid-cols-4 gap-[2px] max-[1200px]:grid-cols-2 max-[600px]:grid-cols-1 max-[600px]:gap-5"
+      >
+        <div class="flex items-center gap-5 bg-[#f4f6fa] rounded-xl p-4">
+          <img src="./imgs/img/item-1.png" alt="item-1" />
+          <a href="./product.html"></a>
+          <div class="flex flex-col gap-1">
+            <h3 class="text-[#242424] text-[15px] font-semibold">
+              Best prices & offers
+            </h3>
+            <p class="text-[#adadad] text-[16px]">Orders $50 or more</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-5 bg-[#f4f6fa] rounded-xl p-4">
+          <a href="./product.html">
+            <img src="./imgs/img/item-2.png" alt="item-1"
+          /></a>
+          <div class="flex flex-col gap-1">
+            <h3 class="text-[#242424] text-[15px] font-semibold">
+              Best prices & offers
+            </h3>
+            <p class="text-[#adadad] text-[16px]">Orders $50 or more</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-5 bg-[#f4f6fa] rounded-xl p-4">
+          <a href="./product.html"
+            ><img src="./imgs/img/item-3.png" alt="item-1"
+          /></a>
+          <div class="flex flex-col gap-1">
+            <h3 class="text-[#242424] text-[15px] font-semibold">
+              Best prices & offers
+            </h3>
+            <p class="text-[#adadad] text-[16px]">Orders $50 or more</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 bg-[#f4f6fa] rounded-xl p-4">
+          <a href="./product.html">
+            <img src="./imgs/img/item-5.png" alt="item-1"
+          /></a>
+          <div class="flex flex-col gap-1">
+            <h3 class="text-[#242424] text-[15px] font-semibold">
+              Best prices & offers
+            </h3>
+            <p class="text-[#adadad] text-[16px]">Orders $50 or more</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#f7f7f8] border border-light-gray">
+      <div class="container1 pt-24">
+        <div
+          class="grid pb-24 grid-cols-4 gap-6 max-[1100px]:grid-cols-2 max-[490px]:grid-cols-1"
+        >
+          <!-- 1 -->
+          <div
+            class="flex flex-col max-[490px]:items-center max-[490px]:justify-center"
+          >
+            <div class="flex items-center gap-[2px]">
+              <img src="./imgs/img/shef.png" alt="sheff" />
+              <div class="flex flex-col gap-[1px] font-bold">
+                <h2>Foodzy</h2>
+                <p class="text-[#818181] text-[10px] font-semibold">
+                  A Treasure of Tastes
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-stone-gray text-[14px] max-w-[394px] pt-2 max-[490px]:text-center max-[490px]:max-w-full"
+            >
+              FoodTrove is the biggest market of grocery products. Get your
+              daily needs from our store.
+            </p>
+            <div class="mt-8 flex flex-col gap-5 max-[490px]:items-center">
+              <div class="flex items-start gap-2">
+                <img src="./imgs/svg/lactation.svg" alt="lactation" />
+                <a
+                  class="text-[#777] text-[14px] max-w-[350px] max-[490px]:text-center"
+                  href="#"
+                  >51 Green St.Huntington ohaio beach ontario, NY 11746 KY 4783,
+                  USA.</a
+                >
+              </div>
+              <div class="flex items-start gap-2">
+                <img src="./imgs/svg/email.svg" alt="lactation" />
+                <a
+                  class="text-[#777] text-[14px] max-w-[350px]"
+                  href="maillo:example@email.com"
+                  >example@email.com</a
+                >
+              </div>
+              <div class="flex items-start gap-2">
+                <img src="./imgs/svg/telefon.svg" alt="lactation" />
+                <a
+                  class="text-[#777] text-[14px] max-w-[350px]"
+                  href="tel:+91 123 4567890"
+                  >+91 123 4567890</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div
+            class="flex flex-col max-[490px]:items-center max-[490px]:justify-center"
+          >
+            <h2 class="text-black text-lg font-bold">Company</h2>
+            <div class="flex flex-col gap-4 pt-4 max-[490px]:text-center">
+              <a class="text-[#777] text-[14px]" href="#">About Us</a>
+              <a class="text-[#777] text-[14px]" href="#"
+                >Delivery Information</a
+              >
+              <a class="text-[#777] text-[14px]" href="#">Privacy Policy</a>
+              <a class="text-[#777] text-[14px]" href="#">Terms & Conditions</a>
+              <a class="text-[#777] text-[14px]" href="#">contact Us</a>
+              <a class="text-[#777] text-[14px]" href="#">Support Center</a>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div
+            class="flex flex-col max-[490px]:items-center max-[490px]:justify-center"
+          >
+            <h2 class="text-black text-lg font-bold">Category</h2>
+            <div class="flex flex-col gap-4 pt-4 max-[490px]:text-center">
+              <a class="text-[#777] text-[14px]" href="#">Dairy & Bakery</a>
+              <a class="text-[#777] text-[14px]" href="#">Fruits & Vegetable</a>
+              <a class="text-[#777] text-[14px]" href="#">Snack & Spice</a>
+              <a class="text-[#777] text-[14px]" href="#">Juice & Drinks</a>
+              <a class="text-[#777] text-[14px]" href="#">Chicken & Meat</a>
+              <a class="text-[#777] text-[14px]" href="#">Fast Food</a>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div>
+            <h2
+              class="text-black text-lg font-bold pb-4 max-[490px]:text-center"
+            >
+              Subscribe Our Newsletter
+            </h2>
+            <div class="flex flex-col gap-6">
+              <div
+                class="border border-[#e9e9e9] rounded-md bg-white p-3 flex items-center justify-between"
+              >
+                <input
+                  class="text-stone-gray outline-none"
+                  type="text"
+                  placeholder="Search here..."
+                />
+                <img src="./imgs/svg/telegram.svg" alt="telegram" />
+              </div>
+              <div class="flex items-center gap-1 max-[490px]:justify-center">
+                <button
+                  class="border border-[#e1dfdf] bg-white hover:bg-[#f5f4f4] rounded-md p-[9px_8px]"
+                >
+                  <img src="./imgs/svg/facbook-icon.svg" alt="facbook-icon" />
+                </button>
+                <button
+                  class="border border-[#e1dfdf] bg-white hover:bg-[#f5f4f4] rounded-md p-[9px_8px]"
+                >
+                  <img src="./imgs/svg/facbook.svg" alt="facbook" />
+                </button>
+                <button
+                  class="border border-[#e1dfdf] bg-white hover:bg-[#f5f4f4] rounded-md p-[9px_8px]"
+                >
+                  <img src="./imgs/svg/shar.svg" alt="facbook" />
+                </button>
+                <button
+                  class="border border-[#e1dfdf] bg-white hover:bg-[#f5f4f4] rounded-md p-[9px_8px]"
+                >
+                  <img src="./imgs/svg/instagram.svg" alt="facbook" />
+                </button>
+              </div>
+              <div class="flex items-center gap-3 max-[490px]:justify-center">
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="./imgs/img/footer-1.png"
+                  alt="footer-1"
+                />
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="./imgs/img/footer-2.png"
+                  alt="footer-2"
+                />
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="./imgs/img/footer-3.png"
+                  alt="footer-3"
+                />
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="./imgs/img/footer-4.png"
+                  alt="footer-4"
+                />
+                <img
+                  class="w-[40px] h-[40px] max-[600px]:hidden max-[490px]:block"
+                  src="./imgs/img/footer-5.png"
+                  alt="footer-5"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-5 text-center border-t border-light-gray">
+          <p>© 2025 foodzy, All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- item end -->
+    <script type="module" src="./js/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        autoplay: {
+          delay: 1500,
+        },
+        loop: true,
+        breakpoints: {
+          200: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          500: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          800: {
+            slidesPerView: 1,
+          },
+          1000: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1350: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
+
+<!-- 
+
+
+
+-->

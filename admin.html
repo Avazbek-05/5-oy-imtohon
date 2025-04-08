@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admen Panel</title>
+    <!-- google font link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="icon" href="./imgs/img/download .png">
+
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body>
+    <!-- herader start -->
+    <header
+      class="shadow-[0px_0px_8px_0px_rgba(51,51,51,0.2)] bg-white z-50 w-full fixed top-0"
+    >
+      <div
+        class="container1 py-2.5 max-[630px]:py-0 flex items-center justify-between"
+      >
+        <label
+          class="border cursor-pointer p-[3px] w-fit rounded-md border-light-gray"
+          for="check"
+        >
+          <img class="w-6 h-6" src="./imgs/svg/menu-bar.svg" alt="menu-bar"
+        /></label>
+        <input type="checkbox" class="hidden" id="check" />
+        <ul class="menu-bar flex items-center gap-10">
+          <label
+            class="hidden max-[1080px]:block absolute top-5 right-5"
+            for="check"
+            ><i class="fa-solid text-lg fa-xmark"></i
+          ></label>
+          <li>
+            <a class="text-[14px] font-medium text-black" href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./product.html"
+              >Product</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./cart.html"
+              >Cart</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./like.html"
+              >Like</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./about.html"
+              >About Us</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="./faq.html"
+              >Faq</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a
+              class="text-[14px] font-medium text-black"
+              href="./blog_detail.html"
+              >Blog</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+          <li class="flex items-center gap-[5px]">
+            <a class="text-[14px] font-medium text-black" href="#"
+              >Admin panel</a
+            >
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </li>
+        </ul>
+        <img
+          class="hidden max-[630px]:block"
+          src="./imgs/img/logo.png"
+          alt="logo"
+        />
+
+        <div class="flex items-center gap-[5px] max-[350px]:hidden">
+          <img
+            class="cursor-pointer"
+            src="./imgs/svg/tel-icon.svg"
+            alt="tel-icon"
+          />
+          <a href="tel:+123 4567890">+123 ( 456 ) ( 7890 )</a>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <section
+      class="mt-[45px] max-[630px]:mt-[73px] z-20 fixed w-full bg-[#fdfafa] shadow-[0px_0px_8px_0px_rgba(51,51,51,0.2)]"
+    >
+      <div class="container1 py-5 flex items-center justify-between">
+        <div class="flex items-center max-[630px]:hidden">
+          <a href="./index.html"
+            ><img class="" src="./imgs/img/logo.png" alt="logo"
+          /></a>
+          <div>
+            <h2 class="text-2xl font-bold">Foodzy</h2>
+            <p class="text-[#221f1f] text-[11px] font-semibold">
+              A Treasure of Tastes
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="border rounded-md border-mint-green flex items-center justify-between w-[500px] max-[800px]:w-[60%] max-[630px]:w-full"
+        >
+          <input
+            class="pl-4 text-[12px] outline-none w-[50%] max-[375px]:w-full"
+            type="text"
+            placeholder="Search For items..."
+          />
+          <div
+            class="flex items-center gap-3 border-l p-2 border-mint-green max-[375px]:hidden"
+          >
+            <p class="text-[13px] font-normal text-black">All Categories</p>
+            <img src="./imgs/svg/bottom-icon.svg" alt="bottom-icon" />
+          </div>
+          <button class="p-[11.5px] rounded-[0px_5px_5px_0px] bg-[#f53e32]">
+            <img src="./imgs/svg/seach.svg" alt="seach" />
+          </button>
+        </div>
+        <div class="flex items-center gap-7 max-[960px]:hidden">
+          <div class="flex items-center gap-2 max-[1100px]:hidden">
+            <img class="w-[15px]" src="./imgs/svg/account.svg" alt="account" />
+            <p class="text-[15px] font-medium text-black">Account</p>
+          </div>
+          <div class="flex items-center relative gap-2">
+            <a href="./like.html">
+              <img class="w-[15px]" src="./imgs/svg/like.svg" alt="like" />
+              <p
+                class="counter_like absolute bg-[red] w-5 h-5 flex items-center justify-center text-white text-[12px] top-[-10px] right-[75px] rounded-full"
+              >
+                0
+              </p>
+            </a>
+            <p class="text-[15px] font-medium text-black">Wishlist</p>
+          </div>
+          <div class="flex items-center gap-2 relative">
+            <a href="./cart.html">
+              <img class="w-[15px]" src="./imgs/svg/cart.svg" alt="cart" />
+              <p
+                class="counter absolute bg-[red] w-5 h-5 flex items-center justify-center text-white text-[12px] top-[-10px] right-[50px] rounded-full"
+              >
+                0
+              </p>
+            </a>
+            <a href="./cart.html">
+              <p class="text-[15px] font-medium text-black">Cart</p></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- admin panel -->
+    <section class="m-auto mb-10 flex pt-[150px] flex-col items-center justify-center">
+      <div class="container1 flex items-center justify-center m-auto w-full">
+        <form
+          id="adminForm"
+          class="border w-[70%] border-light-gray mt-10 rounded-md flex flex-col gap-5 p-10"
+        >
+          <h1 class="text-center text-3xl">Admin Panel</h1>
+          <input
+            class="border outline-none p-2 rounded-md border-light-gray w-full"
+            type="text"
+            name="title"
+            placeholder="MocApi title"
+          />
+          <input
+            class="border outline-none p-2 rounded-md border-light-gray w-full"
+            type="text"
+            name="img"
+            placeholder="MocApi img link"
+          />
+          <input
+            class="border outline-none p-2 rounded-md border-light-gray w-full"
+            type="text"
+            name="rating"
+            placeholder="MocApi rating"
+          />
+          <input
+            class="border outline-none p-2 rounded-md border-light-gray w-full"
+            type="text"
+            name="brand"
+            placeholder="MocApi brand"
+          />
+          <input
+            class="border outline-none p-2 rounded-md border-light-gray w-full"
+            type="text"
+            name="price"
+            placeholder="MocApi price"
+          />
+          <input
+            class="border outline-none p-2 rounded-md border-light-gray w-full"
+            type="text"
+            name="oldPrice"
+            placeholder="MocApi oldPrice"
+          />
+          <input
+            class="border outline-none p-2 rounded-md border-light-gray w-full"
+            type="text"
+            name="category"
+            placeholder="MocApi category"
+          />
+          <input
+            class="border outline-none p-2 rounded-md border-light-gray w-full"
+            type="text"
+            name="text"
+            placeholder="MocApi text"
+          />
+
+          <button class="bg-[red] py-2 text-white text-xl rounded-md w-[50%] m-auto">MocApi Add</button>
+        </form>
+      </div>
+    </section>
+
+
+
+    <script src="./js/admin.js"></script>
+  </body>
+</html>
