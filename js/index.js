@@ -59,5 +59,5 @@ function updateCounter() {
 }
 
 function likeCounter() {
-  counter_like.innerHTML = likes .length;
+  counter_like.innerHTML = likes.length;
 }
